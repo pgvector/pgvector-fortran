@@ -1,0 +1,10 @@
+name = "pgvector"
+
+[build]
+link = ["pq"]
+
+[dependencies]
+libpq-fortran = { git = "https://github.com/ankane/libpq-fortran", branch = "fixes" }
+
+[install]
+library = false
