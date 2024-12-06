@@ -17,5 +17,7 @@ jobs:
           sudo make install
       - uses: fortran-lang/setup-fpm@v5
         with:
-          fpm-version: 0.10.1
+          fpm-version: v0.10.1
       - run: fpm run
+        env:
+          FPM_CFLAGS: -I/usr/include/postgresql
