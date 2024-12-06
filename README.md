@@ -1,6 +1,6 @@
 # pgvector-fortran
 
-[pgvector](https://github.com/pgvector/pgvector) support for Fortran
+[pgvector](https://github.com/pgvector/pgvector) examples for Fortran
 
 Supports [Libpq-Fortran](https://github.com/ShinobuAmasaki/libpq-fortran)
 
