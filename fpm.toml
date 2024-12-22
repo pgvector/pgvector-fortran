@@ -4,7 +4,7 @@ name = "pgvector"
 link = ["pq"]
 
 [dependencies]
-libpq-fortran = { git = "https://github.com/ankane/libpq-fortran", branch = "fixes" }
+libpq-fortran = { git = "https://github.com/ShinobuAmasaki/libpq-fortran" }
 
 [install]
 library = false
