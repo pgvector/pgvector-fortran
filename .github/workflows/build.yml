@@ -11,13 +11,13 @@ jobs:
           dev-files: true
       - run: |
           cd /tmp
-          git clone --branch v0.8.0 https://github.com/pgvector/pgvector.git
+          git clone --branch v0.8.1 https://github.com/pgvector/pgvector.git
           cd pgvector
           make
           sudo make install
-      - uses: fortran-lang/setup-fpm@v5
+      - uses: fortran-lang/setup-fpm@v7
         with:
-          fpm-version: v0.10.1
+          fpm-version: v0.12.0
       - run: fpm run
         env:
           FPM_CFLAGS: -I/usr/include/postgresql
